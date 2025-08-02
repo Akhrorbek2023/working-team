@@ -1,27 +1,29 @@
 const Header = () => {
 	return (
 		<>
-			<header>
-				<h1>Welcome to Our Application</h1>
+			<header className='flex flex-row items-center justify-between'>
+				<a href='/'>
+					<img src='/logo.png' alt='logo' />
+				</a>
 				<nav>
-					<ul>
+					<ul className='flex flex-row items-center gap-4'>
 						<li>
-							<a href='/'>Home</a>
+							<a href='/demos'>Demos</a>
 						</li>
 						<li>
 							<a href='/about'>About</a>
+						</li>
+						<li>
+							<a href='/blog'>Blog</a>
+						</li>
+						<li>
+							<a href='/pages'>Pages</a>
 						</li>
 						<li>
 							<a href='/contact'>Contact</a>
 						</li>
 					</ul>
 				</nav>
-				<div className='user-info'>
-					<p>
-						Logged in as: <strong>User123</strong>
-					</p>
-					<button>Logout</button>
-				</div>
 			</header>
 		</>
 	)
